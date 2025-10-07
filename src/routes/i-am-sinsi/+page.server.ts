@@ -17,9 +17,7 @@ export const actions: Actions = {
         }
         if (
             ref !== '/' &&
-            !ref.startsWith('/kenja') &&
-            !ref.startsWith('/textsearch/') &&
-            !ref.startsWith('/vectorsearch/')
+            !ref.startsWith('/sinsi')
         ) {
             console.warn(`invalid ref: ${ref}`);
             return badRequest();

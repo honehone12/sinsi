@@ -1,4 +1,4 @@
-export const AGE_MODAL_ID = 'kenja_age_modal_dialog';
+export const AGE_MODAL_ID = 'sinsi_age_modal_dialog';
 
 export function getModal(modalId: string) {
     const elem = window.document.getElementById(modalId);

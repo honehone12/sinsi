@@ -1,8 +1,8 @@
 import { redirect, type Cookies } from "@sveltejs/kit";
-import {isLocal} from "$lib";
+import { isLocal } from "$lib";
 
-export const AGE_COOKIE_KEY = 'age-verification';
-export const AGE_COOKIE_VALUE = 'true';
+const AGE_COOKIE_KEY = 'age-verification';
+const AGE_COOKIE_VALUE = 'true';
 
 export function hasAgeCookie(cookies: Cookies) {
     const ageCookie = cookies.get(AGE_COOKIE_KEY);

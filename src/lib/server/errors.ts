@@ -1,4 +1,4 @@
-import {error} from "@sveltejs/kit";
+import { error } from "@sveltejs/kit";
 
 export function badRequest() {
     return error(400, "Bad request.");

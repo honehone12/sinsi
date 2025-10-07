@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {goto} from "$app/navigation";
+    import { goto } from "$app/navigation";
 
     interface Props {
         ref: string;
@@ -19,7 +19,7 @@
     <figure>
         <img
             src="/sinsi.png"
-            alt="Kenja logo with illustration of wise man"
+            alt="Sinsi logo with illustration of wise man"
             class="size-20 mb-5" 
         />
     </figure>
@@ -28,7 +28,7 @@
     </h2>
     <form 
         method="post" 
-        action="/i-am-kenja" 
+        action="/i-am-sinsi" 
         class="card-action mb-15"
     >
         <input 
@@ -41,12 +41,12 @@
             type="button" 
             onclick={onclickNo}
             class="btn btn-lg w-30 btn-neutral tooltip"
-            data-tip="I am too young to be a Kenja."
+            data-tip="I am too young to be a Sinsi."
         >No</button>
         <button 
             type="submit"
             class="btn btn-lg w-30 ml-5 btn-secondary tooltip"
-            data-tip="I am a Kenja older than 18."
+            data-tip="I am a Sinsi older than 18."
         >Yes</button>
     </form>
     <p class="mb-5 px-5">

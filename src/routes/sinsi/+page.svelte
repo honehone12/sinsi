@@ -1,17 +1,13 @@
 <script lang="ts">
-    import {page} from '$app/state';
+    import { page } from '$app/state';
     import { onMount } from 'svelte';
     import { openAgeModal } from "$lib/modal";
     import AgeModal from '$lib/components/AgeModal.svelte';
 
-    interface Props {
-        needAgeVerification: boolean;
-    }
+    let {data} = $props();
 
-    let {needAgeVerification}: Props = $props();
-
-     onMount(() => {
-        if (needAgeVerification) {
+    onMount(() => {
+        if (data.needAgeVerification) {
             openAgeModal();
         }
     });
@@ -19,5 +15,5 @@
 
 <AgeModal ref={page.url.pathname + page.url.search}/>
 <h1 class="text-2xl">
-    This is Sinsi Page.
+    This is Sinsi Page
 </h1>
