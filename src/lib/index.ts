@@ -1,1 +1,5 @@
-// place files you want to import through the `$lib` alias in this folder.
+export const MAX_REF_LEN = 340;
+
+export function isLocal() {
+    return true;
+}
