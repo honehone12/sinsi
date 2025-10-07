@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
+    import logo from "$lib/assets/sinsi.png"
 
     interface Props {
         ref: string;
@@ -18,7 +19,7 @@
     </h1>
     <figure>
         <img
-            src="/sinsi.png"
+            src={logo}
             alt="Sinsi logo with illustration of wise man"
             class="size-20 mb-5" 
         />
