@@ -1,12 +1,7 @@
 import { type Actions } from "@sveltejs/kit";
 import { setAgeCookie } from "$lib/server/cookies";
 import { badRequest } from "$lib/server/errors.js";
-import { CACHE_HEADER } from '$lib/server/headers.js';
 import { MAX_REF_LEN } from "$lib";
-
-export function load({setHeaders}) {
-    setHeaders(CACHE_HEADER);
-}
 
 export const actions: Actions = {
     default: async ({cookies, request}) => {
